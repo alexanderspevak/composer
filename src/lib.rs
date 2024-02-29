@@ -29,7 +29,6 @@ impl ComposerVersion {
         None
     }
 
-    //I do not care about standardizing the date, as it is not defined in the task
     fn clean_from_date(original_version: &str) -> Option<String> {
         let regex_patterns = [
             r"^(?P<date>\d{2}-\d{2}-\d{4})\.(?P<rest>\d+)$",
